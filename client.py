@@ -12,11 +12,11 @@ class ReversiView:
     def __init__(self,reversilogic):
         pygame.init()  # Pygameを初期化
         self.screen = pygame.display.set_mode((400, 400))  # 画面を作成
-        pygame.display.set_caption("オセロ")  # タイトルを作成
+        pygame.display.set_caption("リバーシ")  # タイトルを作成
 
         font1 = pygame.font.SysFont("hgｺﾞｼｯｸe", 30)
 
-        self.taitoru = font1.render("オセロ", True, (255, 255, 255))
+        self.taitoru = font1.render("リバーシ", True, (255, 255, 255))
 
         self.teban_shiro = font1.render("あなたは白です", True, (255, 255, 255))
         self.teban_kuro = font1.render("あなたは黒です", True, (0,0,0))
@@ -82,7 +82,7 @@ class ReversiView:
 
                 
 
-            self.screen.blit(self.taitoru, (155,5))
+            self.screen.blit(self.taitoru, (140,5))
 
             mouseX, mouseY = pygame.mouse.get_pos()
 
